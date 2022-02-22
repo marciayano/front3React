@@ -22,11 +22,10 @@
       // container.appendChild(h1);
   
       //Agora com REACT
-      var h1 = React.createElement("h1",{style:{color:'red'}, id:"title"}, "Hello World");
-      var button = React.createElement("button", {onClick: ()=> alert('Ok'), "Aperte");
-      
-      ReactDOM.render(container, document.getElementById("container"));
-
+      const nome = React.createElement("h3", null, "Marcia");
+      const mensagem = React.createElement("h1", null, "Hello World!!") 
+      const elements = [mensagem, nome];
+      ReactDOM.render(nome, document.getElementById("container"));
     </script>
   </body>
 </html>
