@@ -10,7 +10,7 @@
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 
     <script>
-      //fizemos com JS
+      //Fazendo com JS
       // const numero = 10;
       // // criei o conteiner com referencia a div
       // var container = document.getElementById("container");
@@ -22,10 +22,10 @@
       // container.appendChild(h1);
   
       //Agora com REACT
-      const nome = React.createElement("h3", null, "Marcia");
+      const nome = React.createElement("h3", {style:{color:"orange", backgroundColor: 'black'},}, "Treinando React");
       const mensagem = React.createElement("h1", null, "Hello World!!") 
       const elements = [mensagem, nome];
-      ReactDOM.render(nome, document.getElementById("container"));
+      ReactDOM.render(elements, document.getElementById("container"));
     </script>
   </body>
 </html>
