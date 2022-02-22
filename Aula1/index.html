@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Meu primeiro site</title>
+  </head>
+  <body>
+    <div id="container"></div>
+    
+    <!--CDN para baixar os arquivos para usar o React-->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <script>
+      //fizemos com JS
+      // const numero = 10;
+      // // criei o conteiner com referencia a div
+      // var container = document.getElementById("container");
+
+      // var h1 = document.createElement('h1');
+      // var conteudoH1 = document.createTextNode("Hello World");
+      // h1.appendChild(conteudoH1);
+      // //colocar o hello world no container
+      // container.appendChild(h1);
+  
+      //Agora com REACT
+      var h1 = React.createElement("h1",{style:{color:'red'}, id:"title"}, "Hello World");
+      var button = React.createElement("button", {onClick: ()=> alert('Ok'), "Aperte");
+      
+      ReactDOM.render(container, document.getElementById("container"));
+
+    </script>
+  </body>
+</html>
